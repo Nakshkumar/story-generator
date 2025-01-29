@@ -84,7 +84,6 @@ def generate_story_from_text(scenario: str) -> str:
         "text-generation",
         model=model,
         tokenizer=tokenizer,
-        device=DEVICE,
         max_length=200,  # Increased for complete stories
         num_return_sequences=1,
         temperature=0.7,  # Reduced for more focused generation

@@ -59,8 +59,8 @@ def generate_story_from_text(scenario: str) -> str:
     :return: generated story from the text
     """
     # Initialize the model and tokenizer
-    # model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
-    model_name = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+    model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+    # model_name = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
